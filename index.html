@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stopwatch — Task 02</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="region" aria-label="Stopwatch application">
+      <header>
+        <div>
+          <h1>Stopwatch Web Application</h1>
+          <p>Start, pause, reset and record lap times.</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="display" aria-live="polite">
+          <div id="time" role="timer" aria-atomic="true">00:00.000</div>
+        </div>
+
+        <div class="controls">
+          <button id="startBtn" class="primary">Start</button>
+          <button id="lapBtn" class="ghost" disabled>Lap</button>
+          <button id="resetBtn" class="ghost" disabled>Reset</button>
+        </div>
+
+        <section>
+          <h2>Laps</h2>
+          <ul id="laps" class="laps"></ul>
+        </section>
+
+        <div class="footer">
+          Shortcuts: <strong>Space</strong> = Start/Pause, <strong>L</strong> = Lap, <strong>R</strong> = Reset
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
